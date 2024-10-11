@@ -3,9 +3,10 @@ services:
     build: db
     image: nodeapi-template_postgres-13-alpine-multi-user
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:-docker}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-docker}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
       POSTGRES_DB: ${POSTGRES_DB:-node_db}
+      POSTGRES_DBS: node_db,node_db_test
     volumes:
       - node_db:/var/lib/postgresql/data
     ports:

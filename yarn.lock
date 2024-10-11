@@ -173,19 +173,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^22.7.5":
   version: 22.7.5
   resolution: "@types/node@npm:22.7.5"
   dependencies:
     undici-types: "npm:~6.19.2"
   checksum: cf11f74f1a26053ec58066616e3a8685b6bcd7259bc569738b8f752009f9f0f7f85a1b2d24908e5b0f752482d1e8b6babdf1fbb25758711ec7bb9500bfcd6e60
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^14.14.22":
-  version: 14.18.63
-  resolution: "@types/node@npm:14.18.63"
-  checksum: 626a371419a6a0e11ca460b22bb4894abe5d75c303739588bc96267e380aa8b90ba5a87bc552400584f0ac2a84b5c458dadcbcf0dfd2396ebeb765f7a7f95893
   languageName: node
   linkType: hard
 
@@ -1505,7 +1498,7 @@ __metadata:
   resolution: "nodejs-api-typescript@workspace:."
   dependencies:
     "@types/express": "npm:^4.17.11"
-    "@types/node": "npm:^14.14.22"
+    "@types/node": "npm:^22.7.5"
     "@types/pg": "npm:^8"
     express: "npm:^4.17.1"
     nodemon: "npm:^2.0.7"
