@@ -1,0 +1,14 @@
+services:
+  db:
+    build: db
+    image: nodeapi-template_postgres-13-alpine-multi-user
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-docker}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-docker}
+      POSTGRES_DB: ${POSTGRES_DB:-node_db}
+    volumes:
+      - node_db:/var/lib/postgresql/data
+    ports:
+      - "${PG_PORT:-5444}:5432"
+volumes:
+  node_db:
